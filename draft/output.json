@@ -1,0 +1,814 @@
+{
+    "paging": {
+        "cursors": {
+            "next": "4272",
+            "previous": null
+        },
+        "first": null,
+        "last": "https://r-studio-connect.spotcap.com/__api__/v1/audit_logs?ascOrder=false&last=true&limit=100",
+        "next": "https://r-studio-connect.spotcap.com/__api__/v1/audit_logs?ascOrder=false&limit=100&next=4272",
+        "previous": null
+    },
+    "results": [
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_light_performance_test: no differences",
+            "id": "4371",
+            "time": "2021-08-27T13:59:27+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "add_image_to_app",
+            "event_description": "Added image with MD5 ending in '549f444864' to app spotcap_light_performance_test",
+            "id": "4370",
+            "time": "2021-08-27T13:59:27+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "web_sudo",
+            "event_description": "Re-authentication for expired WebSudo privileges",
+            "id": "4369",
+            "time": "2021-08-27T13:21:34+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "user_login",
+            "event_description": "New session by user: 5ec54260-5021-4df5-a60c-c33826b52c93 (ilia.ozhmegov@spotcap.com)",
+            "id": "4368",
+            "time": "2021-08-26T15:11:20+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-223-947.tar.gz to application spotcap_bankaccount_performance_by_ilia",
+            "id": "4367",
+            "time": "2021-08-25T16:26:56+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bankaccount_performance_by_ilia (1845264 bytes)",
+            "id": "4366",
+            "time": "2021-08-25T16:26:55+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-223-946.tar.gz to application spotcap_bankaccount_performance_by_ilia",
+            "id": "4365",
+            "time": "2021-08-25T16:22:50+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bankaccount_performance_by_ilia (1832616 bytes)",
+            "id": "4364",
+            "time": "2021-08-25T16:22:50+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-223-945.tar.gz to application spotcap_bankaccount_performance_by_ilia",
+            "id": "4363",
+            "time": "2021-08-25T15:26:39+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bankaccount_performance_by_ilia (1832609 bytes)",
+            "id": "4362",
+            "time": "2021-08-25T15:26:38+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-223-944.tar.gz to application spotcap_bankaccount_performance_by_ilia",
+            "id": "4361",
+            "time": "2021-08-25T15:20:24+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bankaccount_performance_by_ilia (1832596 bytes)",
+            "id": "4360",
+            "time": "2021-08-25T15:20:24+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-223-943.tar.gz to application spotcap_bankaccount_performance_by_ilia",
+            "id": "4359",
+            "time": "2021-08-25T15:15:22+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bankaccount_performance_by_ilia (1832606 bytes)",
+            "id": "4358",
+            "time": "2021-08-25T15:15:22+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 179",
+            "id": "4357",
+            "time": "2021-08-25T15:01:35+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_user_app_role",
+            "event_description": "Assigned user   (Spotcap_Prod) role 'viewer' in app 179",
+            "id": "4356",
+            "time": "2021-08-25T14:06:15+02:00",
+            "user_description": "Viktor Kocherga (Viktor)",
+            "user_id": "50"
+        },
+        {
+            "action": "user_login",
+            "event_description": "New session by user: 932dfa90-99eb-4793-8119-25c06a9a70ca (viktor.kocherga@spotcap.com)",
+            "id": "4355",
+            "time": "2021-08-25T14:04:11+02:00",
+            "user_description": "Viktor Kocherga (Viktor)",
+            "user_id": "50"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-207-942.tar.gz to application spotcap_cluster_description",
+            "id": "4354",
+            "time": "2021-08-25T13:43:11+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_cluster_description (48851 bytes)",
+            "id": "4353",
+            "time": "2021-08-25T13:43:11+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 204",
+            "id": "4352",
+            "time": "2021-08-25T12:51:34+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_light_performance_redeployed_20190715: no differences",
+            "id": "4351",
+            "time": "2021-08-25T12:49:15+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 177",
+            "id": "4350",
+            "time": "2021-08-25T12:49:13+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "remove_group_app_role",
+            "event_description": "Removed group SMT role 'viewer' in app 206",
+            "id": "4349",
+            "time": "2021-08-25T12:48:36+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 206",
+            "id": "4348",
+            "time": "2021-08-25T12:48:33+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_cluster_description: no differences",
+            "id": "4347",
+            "time": "2021-08-25T12:42:06+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 207",
+            "id": "4346",
+            "time": "2021-08-25T12:42:05+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-898.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4345",
+            "time": "2021-08-25T12:36:56+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-897.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4344",
+            "time": "2021-08-25T12:36:28+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-925.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4343",
+            "time": "2021-08-25T12:35:47+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-926.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4342",
+            "time": "2021-08-25T12:29:54+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-898.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4341",
+            "time": "2021-08-25T12:29:06+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "web_sudo",
+            "event_description": "Re-authentication for expired WebSudo privileges",
+            "id": "4340",
+            "time": "2021-08-25T12:27:41+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "web_sudo",
+            "event_description": "Re-authentication for expired WebSudo privileges",
+            "id": "4339",
+            "time": "2021-08-25T12:25:42+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "web_sudo",
+            "event_description": "Re-authentication for expired WebSudo privileges",
+            "id": "4338",
+            "time": "2021-08-24T17:08:57+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_bankaccount_performance_by_ilia: no differences",
+            "id": "4337",
+            "time": "2021-08-24T14:29:18+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 223",
+            "id": "4336",
+            "time": "2021-08-24T14:29:17+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-223-941.tar.gz to application spotcap_bankaccount_performance_by_ilia",
+            "id": "4335",
+            "time": "2021-08-24T14:19:00+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bankaccount_performance_by_ilia (1834530 bytes)",
+            "id": "4334",
+            "time": "2021-08-24T14:18:59+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "add_application",
+            "event_description": "Created application spotcap_bankaccount_performance_by_ilia",
+            "id": "4333",
+            "time": "2021-08-24T14:17:15+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-925.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4332",
+            "time": "2021-08-24T14:12:52+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-898.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4331",
+            "time": "2021-08-24T14:12:00+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-925.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4330",
+            "time": "2021-08-24T14:11:06+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-940.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4329",
+            "time": "2021-08-24T14:09:32+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862161 bytes)",
+            "id": "4328",
+            "time": "2021-08-24T14:09:32+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-936.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4327",
+            "time": "2021-08-24T14:06:35+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-939.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4326",
+            "time": "2021-08-24T14:03:46+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1863740 bytes)",
+            "id": "4325",
+            "time": "2021-08-24T14:03:46+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-938.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4324",
+            "time": "2021-08-24T13:52:15+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1863195 bytes)",
+            "id": "4323",
+            "time": "2021-08-24T13:52:15+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "remove_application",
+            "event_description": "Removed application test",
+            "id": "4322",
+            "time": "2021-08-24T13:36:35+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "web_sudo",
+            "event_description": "Re-authentication for expired WebSudo privileges",
+            "id": "4321",
+            "time": "2021-08-24T13:35:22+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-222-937.tar.gz to application test",
+            "id": "4320",
+            "time": "2021-08-24T13:27:20+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app test (1325132 bytes)",
+            "id": "4319",
+            "time": "2021-08-24T13:27:20+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "add_application",
+            "event_description": "Created application test",
+            "id": "4318",
+            "time": "2021-08-24T13:25:51+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "activate_token",
+            "event_description": "Activated token T7ae4ea5f4d45aff3b2e83656b30f9c85",
+            "id": "4317",
+            "time": "2021-08-24T13:24:15+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "user_login",
+            "event_description": "New session by user: 5ec54260-5021-4df5-a60c-c33826b52c93 (ilia.ozhmegov@spotcap.com)",
+            "id": "4316",
+            "time": "2021-08-24T13:24:12+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-936.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4315",
+            "time": "2021-08-23T18:33:09+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862153 bytes)",
+            "id": "4314",
+            "time": "2021-08-23T18:33:09+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-935.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4313",
+            "time": "2021-08-23T18:21:37+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862164 bytes)",
+            "id": "4312",
+            "time": "2021-08-23T18:21:37+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-934.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4311",
+            "time": "2021-08-23T17:47:49+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862132 bytes)",
+            "id": "4310",
+            "time": "2021-08-23T17:47:49+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-933.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4309",
+            "time": "2021-08-23T17:46:32+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862109 bytes)",
+            "id": "4308",
+            "time": "2021-08-23T17:46:32+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-932.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4307",
+            "time": "2021-08-23T17:36:21+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862105 bytes)",
+            "id": "4306",
+            "time": "2021-08-23T17:36:21+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-931.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4305",
+            "time": "2021-08-23T13:12:41+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862113 bytes)",
+            "id": "4304",
+            "time": "2021-08-23T13:12:41+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-930.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4303",
+            "time": "2021-08-23T13:04:53+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862112 bytes)",
+            "id": "4302",
+            "time": "2021-08-23T13:04:53+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-929.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4301",
+            "time": "2021-08-23T12:56:16+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862114 bytes)",
+            "id": "4300",
+            "time": "2021-08-23T12:56:16+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-928.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4299",
+            "time": "2021-08-23T12:45:23+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862097 bytes)",
+            "id": "4298",
+            "time": "2021-08-23T12:45:23+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-927.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4297",
+            "time": "2021-08-23T12:39:43+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862100 bytes)",
+            "id": "4296",
+            "time": "2021-08-23T12:39:42+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-926.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4295",
+            "time": "2021-08-23T12:32:17+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862096 bytes)",
+            "id": "4294",
+            "time": "2021-08-23T12:32:17+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "user_login",
+            "event_description": "New session by user: 5ec54260-5021-4df5-a60c-c33826b52c93 (ilia.ozhmegov@spotcap.com)",
+            "id": "4293",
+            "time": "2021-08-23T12:26:27+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap-bankaccount-performance2: no differences",
+            "id": "4292",
+            "time": "2021-08-20T16:48:21+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 196",
+            "id": "4291",
+            "time": "2021-08-20T16:48:20+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "remove_user_app_role",
+            "event_description": "Removed user   (rsc) role 'viewer' in app 196",
+            "id": "4290",
+            "time": "2021-08-20T16:48:13+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-196-925.tar.gz to application spotcap-bankaccount-performance2",
+            "id": "4289",
+            "time": "2021-08-20T16:38:02+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap-bankaccount-performance2 (1862081 bytes)",
+            "id": "4288",
+            "time": "2021-08-20T16:38:02+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_bank_account_transaction_performace: no differences",
+            "id": "4287",
+            "time": "2021-08-20T14:06:12+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Prod role 'viewer' in app 221",
+            "id": "4286",
+            "time": "2021-08-20T14:06:10+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "deploy_application",
+            "event_description": "Deployed bundle /var/lib/rstudio-connect/bundles/app-221-924.tar.gz to application spotcap_bank_account_transaction_performace",
+            "id": "4285",
+            "time": "2021-08-20T14:05:41+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "upload_bundle",
+            "event_description": "Uploaded bundle for app spotcap_bank_account_transaction_performace (81225 bytes)",
+            "id": "4284",
+            "time": "2021-08-20T14:05:41+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "add_application",
+            "event_description": "Created application spotcap_bank_account_transaction_performace",
+            "id": "4283",
+            "time": "2021-08-20T14:05:37+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_light_performance_test: no differences",
+            "id": "4282",
+            "time": "2021-08-20T14:02:56+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Test role 'viewer' in app 216",
+            "id": "4281",
+            "time": "2021-08-20T14:02:55+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "remove_user_app_role",
+            "event_description": "Removed user Spotcap Test (Spotcap_Test) role 'viewer' in app 216",
+            "id": "4280",
+            "time": "2021-08-20T14:02:49+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_edb_stats_test: no differences",
+            "id": "4279",
+            "time": "2021-08-20T14:02:38+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Test role 'viewer' in app 217",
+            "id": "4278",
+            "time": "2021-08-20T14:02:36+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "remove_user_app_role",
+            "event_description": "Removed user Spotcap Test (Spotcap_Test) role 'viewer' in app 217",
+            "id": "4277",
+            "time": "2021-08-20T14:02:31+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_standard_performance_test: no differences",
+            "id": "4276",
+            "time": "2021-08-20T14:02:13+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Test role 'viewer' in app 218",
+            "id": "4275",
+            "time": "2021-08-20T14:02:13+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application spotcap_bank_account_transaction_performace_test3: no differences",
+            "id": "4274",
+            "time": "2021-08-20T13:58:07+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "assign_group_app_role",
+            "event_description": "Assigned group Spotcap_Test role 'viewer' in app 214",
+            "id": "4273",
+            "time": "2021-08-20T13:58:05+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        },
+        {
+            "action": "edit_application",
+            "event_description": "Edited application covid_bank_account_stats_test: no differences",
+            "id": "4272",
+            "time": "2021-08-20T11:52:19+02:00",
+            "user_description": "Ilia Ozhmegov (Ilia_ozhmegov)",
+            "user_id": "51"
+        }
+    ]
+}

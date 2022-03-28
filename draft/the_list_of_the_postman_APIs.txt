@@ -1,0 +1,13 @@
+
++ Bank Account Stats, needs staging deployment on production
+Spotcap Bank Account Performance
++ Spotcap Transaction Performance
+BA COVID stats
+? Bawag EDB Stats???
+? Bawag Light Performance RSC???
+? Cembra ZEK Prediction???
+Spotcap Description Clustering
+Spotcap Description Clustering Stats
+Spotcap EDB Stats
+Spotcap Light Performance
+Spotcap Standart Performance

@@ -1,0 +1,19 @@
+Package: apiBAcovid
+Type: Package
+Title: Calculate bank account BA time-series variables for three
+        COVID-19 time periods
+Version: 2020.06.25-0.6
+Authors@R: person("Ilia", "Ozhmegov", email = "ilia.ozhmegov@spotcap.com", role = c("aut", "cre"))
+Maintainer: Ilia Ozhmegov <ilia.ozhmegov@spotcap.com>
+Description: The apiBAcovid package calculates time-series variables for three separeted COVID-19 time periods (Jan-Feb, Mar-Apr and the last 60 days) based on EDB input that are used in the main scoring model.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.6.0), dplyr (>= 0.8.5), lubridate (>= 1.7.4), magrittr
+        (>= 1.5), spotcapr (>= 0.0.2.3), tibble (>= 3.0.1), tidyr (>=
+        1.0.2), purrr (>= 0.3.3), stringr (>= 1.4.0), glue (>= 1.4.1),
+        apiBankEdbStats (>= 2019.6.4.4)
+Suggests: testthat, plumber
+Author: Ilia Ozhmegov [aut, cre]
+Built: R 4.0.2; ; 2020-08-06 08:57:25 UTC; unix

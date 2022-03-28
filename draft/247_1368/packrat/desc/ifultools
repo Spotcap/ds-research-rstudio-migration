@@ -1,0 +1,16 @@
+Package: ifultools
+Title: Insightful Research Tools
+Version: 2.0-5.1
+Authors@R: person("William", "Constantine", email = "wlbconstan@gmail.com", role = c("cre", "aut"))
+Depends: R (>= 3.0.2)
+Imports: MASS, methods, splus2R (>= 1.2-0)
+Description: Insightful Research Tools.
+License: GPL-2
+Collate: it_mutils.R it_plot.R it_util.R it_calls.R package.R
+Repository: CRAN
+NeedsCompilation: yes
+Packaged: 2020-05-26 07:57:59 UTC; ripley
+Author: William Constantine [cre, aut]
+Maintainer: ORPHANED
+Date/Publication: 2020-05-26 09:59:47
+Built: R 4.0.0; x86_64-pc-linux-gnu; 2020-05-27 08:05:16 UTC; unix

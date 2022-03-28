@@ -1,0 +1,54 @@
+"","name","package","repo","id","bundle_id"
+"1","spotcap_transaction_performace","apiTransactionModel","ds-model-endpoints-transaction-model",258,1547
+"2","spotcap_light_performance_redeployed2","apiLightPerformance","ds-model-endpoint-light",208,1555
+"3","spotcap_edb_stats","apiBankEdbStats","ds-other-endpoints-edb-stats",181,1551
+"4","spotcap_standard_performance","apiStandardPerformanceWhiteLabel","ds-model-endpoints-standard-model",257,1505
+"5","spotcap_cluster_description_stats","apiClusterDescriptionStats","ds-other-endpoints-cluster-stats",242,1503
+"6","spotcap-bankaccount-performance","apiBaStatsEdbPerformance","ds-model-endpoints-bastatsedb-performance",223,1502
+"7","spotcap_cluster_description","apiClusterDescription","ds-other-endpoints-cluster-description",240,1497
+"8","bank_account_stats","bankAccountStats","",256,1495
+"9","spotcap-bankaccount-performace_tests_on_other_side","apiBaStatsEdbPerformance","ds-model-endpoints-bastatsedb-performance",254,1469
+"10","ba_covid_stats","apiBAcovid","ds-other-endpoints-ba-covid",247,1368
+"11","bawag_light_performance_rsc","apiBawagLightRsc","ds-model-endpoint-bawag-rsc",225,1306
+"12","cembra_zek_prediction","apiCembraZEKPrediction","ds-model-endpoint-cembra-zek",213,1286
+"13","test-plot","no package","",224,1279
+"14","bawag_edb_stats","apiBankEdbStatsBawag","ds-other-endpoints-edb-stats-bawag",220,1222
+"15","spotcap_approval_probability","no package","",180,1215
+"16","spotcap_standard_performance_new","apiStandardPerformance","ds-model-endpoint-standard",210,1214
+"17","spotcap_transactions_clustering","apiBankTransactionsClustering","ds-other-endpoint-transactions-clustering",207,1209
+"18","plumber_logging","no package","",215,1201
+"19","spotcap_transactions_categorization_redeployed","apiBankTransactionsCategorization","ds-model-endpoint-transactions-categorization",193,1196
+"20","spotcap_light_expert_scorecard_wrapper","apiLightExpertScorecardWrapper","ds-other-endpoint-light-expert-scorecard-wrapper",199,1156
+"21","bawag_light_performance","apiBawagLight","ds-model-endpoint-bawag",209,1085
+"22","06_categorizationstats","apiBankTransactionsCategorizationStats","ds-other-endpoints-transactions-categorization-stats",154,1080
+"23","spotcap_standard_performance","no package","",126,915
+"24","testpackage","spotcapr, aider","",171,782
+"25","05_cors_testing","no package","",169,775
+"26","spotcap_inter_company_transaction","no package","",147,669
+"27","plot_bank_account_data","apiBaPlot","",224,951
+"28","spotcap_bankaccount_performance_by_ilia","apiBaStatsEdbPerformance","ds-model-endpoints-bastatsedb-performance",223,947
+"29","spotcap_cluster_description","apiClusterDescription","ds-other-endpoints-cluster-description",207,942
+"30","spotcap-bankaccount-performance2","apiBaStatsEdbPerformance","ds-model-endpoints-bastatsedb-performance",196,898
+"31","spotcap_bank_account_transaction_performace","apiTransactionModel","ds-model-endpoints-transaction-model",221,924
+"32","covid_bank_account_stats_test","covidBankAccountStats, bankAccountStats","",220,923
+"33","spotcap_standard_performance_test","apiStandardPerformanceWhiteLabel","ds-model-endpoints-standard-model",218,915
+"34","spotcap_edb_stats_test","apiBankEdbStats","ds-other-endpoints-edb-stats",217,914
+"35","spotcap_light_performance_test","apiLightPerformance","ds-model-endpoint-light",216,913
+"36","spotcap_bank_account_transaction_performace_test3","apiTransactionModel","ds-model-endpoints-transaction-model",214,912
+"37","bank_account_stats2","bankAccountStats","",205,899
+"38","spotcap_cluster_description_stats2","apiClusterDescriptionStats","ds-other-endpoints-cluster-stats",206,896
+"39","ba_covid_stats2","apiBAcovid","ds-other-endpoints-ba-covid",204,875
+"40","spotcap_edb_stats2","apiBankEdbStats","ds-other-endpoints-edb-stats",179,867
+"41","bawag_light_performance_rsc2","apiBawagLightRsc","ds-model-endpoint-bawag-rsc",198,859
+"42","test_api2","no package","",197,858
+"43","spotcap_light_performance_redeployed_20190715","apiLightPerformance","ds-model-endpoint-light",177,855
+"44","cembra_zek_prediction2","apiCembraZEKPrediction","ds-model-endpoint-cembra-zek",195,851
+"45","bawag_edb_stats2","apiBankEdbStatsBawag","ds-other-endpoints-edb-stats-bawag",194,848
+"46","spotcap_standard_performance","apiStandardPerformance","ds-model-endpoint-standard",180,841
+"47","spotcap_transactions_categorization2","apiBankTransactionsCategorization","ds-model-endpoint-transactions-categorization",193,835
+"48","spotcap_transactions_categorization_stats2","apiBankTransactionsCategorizationStats","ds-other-endpoints-transactions-categorization-stats",190,813
+"49","spotcap_transactions_clustering2","apiBankTransactionsClustering","ds-other-endpoint-transactions-clustering",182,805
+"50","bawag_light_performance2","apiBawagLight","ds-model-endpoint-bawag",178,802
+"51","spotcap_light_expert_scorecard_wrapper_redeployed","apiLightExpertScorecardWrapper","ds-other-endpoint-light-expert-scorecard-wrapper",176,799
+"52","spotcap_transactions_categorization","no package","",164,693
+"53","spotcap_intercompany_transactions","no package","",156,675

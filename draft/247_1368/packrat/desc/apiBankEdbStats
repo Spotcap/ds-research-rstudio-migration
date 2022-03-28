@@ -1,0 +1,18 @@
+Package: apiBankEdbStats
+Title: Calculate bank account BA time-series variables
+Version: 2019.06.04-05
+Authors@R: person("Konrad", "Semsch", email = "konrad.semsch@spotcap.com", role = c("aut", "cre"))
+Description: The apiBankEdbStats package calculates time-series variables based on EDB input that are used in the main scoring model.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0.9000
+Depends: R (>= 3.6.0), dplyr (>= 0.8.1)
+Imports: stats, tsfeatures (== 1.0.1), purrr (>= 0.3.2), jsonlite (>=
+        1.6), spotcapr (>= 0.0.1), stringr (>= 1.4.0), tidyr (>=
+        1.0.2), config (>= 0.3), magrittr (>= 1.5), ggplot2 (>= 3.1.1),
+        lubridate (>= 1.7.4)
+Suggests: testthat, callr, here, httr, plumber
+Author: Konrad Semsch [aut, cre]
+Maintainer: Konrad Semsch <konrad.semsch@spotcap.com>
+Built: R 4.0.0; ; 2020-07-01 11:05:49 UTC; unix

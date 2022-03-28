@@ -1,0 +1,866 @@
+"","guid","name","title","description","access_type","created_time","last_deployed_time","bundle_id","app_mode","content_category","parameterized","r_version","run_as_current_user","owner_guid","content_url","dashboard_url","app_role","id","connection_timeout","read_timeout","init_timeout","idle_timeout","max_processes","min_processes","max_conns_per_process","load_factor","py_version","server","package","version","built","endpoints"
+"1","c8286d8b-ce9b-417c-b309-ded237d5d630","spotcap_transaction_performace","Spotcap Transaction Performace","The apiTransactionModel package predicts the likelihood of default for an application based on any bank account data, but the minimum requirement is 90 days.","acl","2021-03-18T20:47:38Z","2021-07-14T12:35:38Z","1547","api","api",FALSE,"3.6.0",FALSE,"25731b88-d2f7-4dee-8a52-b9cb40c069bf","https://r-studio-connect-staging.spotcap.com/content/c8286d8b-ce9b-417c-b309-ded237d5d630/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/c8286d8b-ce9b-417c-b309-ded237d5d630","owner","258",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiTransactionModel","2021.06.14-0.13","R 4.0.5; ; 2021-06-14 12:19:51 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_transaction_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"2","02446c36-9260-4a63-9784-de300154069d","spotcap_light_performance_redeployed2","Spotcap Light Performance","The apiLightPerformance package predicts the likelihood of default for a Light product application using a variety of different application level data. (OUTDATED)","acl","2019-07-15T08:33:07Z","2021-06-15T09:23:38Z","1555","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/02446c36-9260-4a63-9784-de300154069d/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/02446c36-9260-4a63-9784-de300154069d","owner","208",3600,3600,60,5,2,1,5,0.3,NA,"staging","apiLightPerformance","2021.06.15-4","R 4.0.5; ; 2021-06-15 09:23:17 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a bank account prediction (transaction model) 
+ #* @post /predict_transaction_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   # Retrieving the prediction 
+   api_parsed_content <- tryCatch( 
+     httr::content(api_response, encoding = ""UTF-8""), 
+     error = function(x) NA) 
+  
+   api_parsed_header <- tryCatch( 
+     httr::headers(api_response), 
+     error = function(x) NA) 
+ -- 
+ #* Make a bank account prediction 
+ #* @post /predict_ba 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   # Retrieving the prediction 
+   api_parsed_content <- tryCatch( 
+     httr::content(api_response, encoding = ""UTF-8""), 
+     error = function(x) NA) 
+  
+   api_parsed_header <- tryCatch( 
+     httr::headers(api_response), 
+     error = function(x) NA) 
+ -- 
+ #* Make a bank account prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"3","4cd923dc-0f57-4edc-8620-5852a4522ce2","spotcap_edb_stats","Spotcap EDB Stats","The apiBankEdbStats package calculates time-series variables based on EDB input that are used in the main scoring model.","acl","2019-06-03T07:20:13Z","2021-06-14T12:39:51Z","1551","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/4cd923dc-0f57-4edc-8620-5852a4522ce2/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/4cd923dc-0f57-4edc-8620-5852a4522ce2","owner","181",3600,3600,60,5,2,1,5,0.3,NA,"staging","apiBankEdbStats","2021.06.14-03","R 4.0.5; ; 2021-06-14 12:39:26 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate EDB variables from request 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* @param user_id A user_id to get the EDBs for 
+ #* @get /calculate_self 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Calculate CLA space 
+ #* @post /calculate_cl 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate EDB windowed variables from request 
+ #* @post /calculate_windowed 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate EDB windowed variables for one perido from request 
+ #* @post /calculate_windowed_period 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"4","d07aac7e-7581-4ebd-81e1-f320e7f28183","spotcap_standard_performance","Spotcap Standard Performance","The apiStandardPerformanceWhiteLabel package predicts the likelihood of default for an application based on strandar account data.","acl","2021-01-25T10:15:27Z","2021-02-16T13:41:56Z","1505","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/d07aac7e-7581-4ebd-81e1-f320e7f28183/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/d07aac7e-7581-4ebd-81e1-f320e7f28183","owner","257",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiStandardPerformanceWhiteLabel","2021.02.16-1","R 3.6.1; ; 2021-02-16 13:39:19 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_standard_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Convert industry to standard 
+ #* @post /convert_industry 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"5","2b910c77-fa76-49f6-8a36-904296307d8c","spotcap_cluster_description_stats","Spotcap Cluster Description Stats","The apiClusterDescriptionStats package calculates variables based on clusters.","acl","2020-06-15T09:40:33Z","2021-02-04T13:36:31Z","1503","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/2b910c77-fa76-49f6-8a36-904296307d8c/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/2b910c77-fa76-49f6-8a36-904296307d8c","owner","242",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiClusterDescriptionStats","2020.06.10-13","R 3.6.1; ; 2021-02-04 13:34:20 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate cluster stat variables from request 
+ #* @post /calculate_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate top-10 cluster in/outflows from request 
+ #* @post /calculate_top_ten_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"6","8e92e737-8038-4d83-9caa-bcf93cec7caa","spotcap-bankaccount-performance","Spotcap Bankaccount Performance","The apiBaStatsEdbPerformance package predicts the likelihood of default for an application based bank account data.","acl","2019-11-07T14:09:24Z","2021-02-04T13:03:05Z","1502","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/8e92e737-8038-4d83-9caa-bcf93cec7caa/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/8e92e737-8038-4d83-9caa-bcf93cec7caa","owner","223",3600,3600,60,120,3,1,50,0.2,NA,"staging","apiBaStatsEdbPerformance","2019.11.01-33.2","R 4.0.3; ; 2021-02-04 12:59:29 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_ba_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create additional stats 
+ #* @post /ba_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create plots 
+ #* @post /plot 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate a loan table 
+ #* @post /loan_table 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"7","a3f736af-f8d3-49e4-8eb4-6391ee072063","spotcap_cluster_description","Spotcap Cluster Description","The apiClusterDescription package extracts IBAN for every transaction
+    and than clusters it. If there is no IBAN in a ""transaction"" entry, then it 
+    takes transformed data from a ""Description"" field. And transforms these 
+    into clusters.","acl","2020-06-10T11:16:33Z","2021-02-04T08:27:14Z","1497","api","api",FALSE,"3.6.0",FALSE,"25731b88-d2f7-4dee-8a52-b9cb40c069bf","https://r-studio-connect-staging.spotcap.com/content/a3f736af-f8d3-49e4-8eb4-6391ee072063/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/a3f736af-f8d3-49e4-8eb4-6391ee072063","owner","240",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiClusterDescription","2020.05.27-0.14","R 3.6.1; x86_64-apple-darwin15.6.0; 2021-02-04 08:10:48 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Cluster transactions based on Iban's or description field 
+ #* @post /cluster 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"8","de913a9e-beb6-45ae-a947-7973536d8f21","bank_account_stats","Bank Account Stats","The API includes all Bank Account related functions.
+    Use four spaces when indenting paragraphs within the Description.","acl","2020-10-12T07:02:30Z","2020-12-10T16:19:49Z","1495","api","api",FALSE,"3.6.0",FALSE,"25731b88-d2f7-4dee-8a52-b9cb40c069bf","https://r-studio-connect-staging.spotcap.com/content/de913a9e-beb6-45ae-a947-7973536d8f21/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/de913a9e-beb6-45ae-a947-7973536d8f21","owner","256",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","bankAccountStats","2020.10.05-1.6.3","R 4.0.2; ; 2020-12-10 16:16:25 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate COVID risk score 
+ #* @post /covid_risk_score 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   } 
+  
+   message("">>> Loading lockdown periods config... <<<"") 
+   # TODO: make it thru mutate inside of the function, the function should give 
+ -- 
+   client$periods <- load_lockdown_periods(client$periods) 
+  
+   message("">>> Loading weights config... <<<"") 
+   # TODO: make it thru mutate inside of the function, the function should give"
+"9","4e75ee9f-2041-4595-a641-f0e19b52515f","spotcap-bankaccount-performace_tests_on_other_side","Spotcap-Bankaccount-Performace (tests on other side)","The apiBaStatsEdbPerformance package predicts the likelihood of default for an application based bank account data.","acl","2020-09-07T10:13:52Z","2020-10-22T13:35:41Z","1469","api","api",FALSE,"3.6.0",FALSE,"25731b88-d2f7-4dee-8a52-b9cb40c069bf","https://r-studio-connect-staging.spotcap.com/content/4e75ee9f-2041-4595-a641-f0e19b52515f/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/4e75ee9f-2041-4595-a641-f0e19b52515f","owner","254",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiBaStatsEdbPerformance","2019.11.01-32.1","R 4.0.2; ; 2020-10-22 13:32:35 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_ba_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create additional stats 
+ #* @post /ba_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create plots 
+ #* @post /plot 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate a loan table 
+ #* @post /loan_table 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"10","710a10bc-1d59-4ee6-8840-717ecee93c0e","ba_covid_stats","Bank Account COVID stats","The apiBAcovid package calculates time-series variables for three separeted COVID-19 time periods (Jan-Feb, Mar-Apr and the last 60 days) based on EDB input that are used in the main scoring model.","acl","2020-07-01T11:32:47Z","2020-08-06T08:58:29Z","1368","api","api",FALSE,"3.6.0",FALSE,"25731b88-d2f7-4dee-8a52-b9cb40c069bf","https://r-studio-connect-staging.spotcap.com/content/710a10bc-1d59-4ee6-8840-717ecee93c0e/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/710a10bc-1d59-4ee6-8840-717ecee93c0e","owner","247",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiBAcovid","2020.06.25-0.6","R 4.0.2; ; 2020-08-06 08:57:25 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Slice the data into 3 different data frames and calculates stats 
+ #* @post /covid_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Evaluates seasonality and calculates corresponding stats 
+ #* @post /sesonality_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"11","7c13bfb0-d45d-4e1e-8ac8-a78762b42793","bawag_light_performance_rsc","Bawag Light Performance RSC","The apiBawagLightRsc package predicts the likelihood of default for a Bawag Light product application using a variety of different application level data.","acl","2020-03-24T14:21:23Z","2020-03-24T15:44:59Z","1306","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/7c13bfb0-d45d-4e1e-8ac8-a78762b42793/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/7c13bfb0-d45d-4e1e-8ac8-a78762b42793","owner","225",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiBawagLightRsc","2020.03.23-03","R 3.6.1; ; 2020-03-24 15:44:12 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"12","9bf4c2de-43a1-4c44-9969-f036a2d814b5","cembra_zek_prediction","CEMBRA ZEK Prediction","The apiCembraZEKPrediction package predicts the likelihood of default for an application based on data from ZEK and converts it to a score.","acl","2019-07-31T08:33:33Z","2019-11-25T11:41:10Z","1286","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect-staging.spotcap.com/content/9bf4c2de-43a1-4c44-9969-f036a2d814b5/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/9bf4c2de-43a1-4c44-9969-f036a2d814b5","owner","213",3600,3600,60,5,4,0,20,0.5,NA,"staging","apiCembraZEKPrediction","2019.07.29-6","R 3.6.1; ; 2019-11-25 11:40:25 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_zek 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"13","97e38c5f-2e19-4096-8f2f-d5bde6f0f2f0","test-plot","Test-Plot","Test API","acl","2019-11-12T09:57:15Z","2019-11-12T15:36:56Z","1279","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/97e38c5f-2e19-4096-8f2f-d5bde6f0f2f0/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/97e38c5f-2e19-4096-8f2f-d5bde6f0f2f0","owner","224",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","no package","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Get your plot 
+ #* @post /plot 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+     # https://stackoverflow.com/questions/50244709/how-to-store-r-ggplot-graph-as-html-code-snippet/50244825 
+      
+     ### PLOT FUNCTION ###   
+     plot_to_base64 <- function(my_plot) {"
+"14","b120d06d-9d16-4e31-a88a-f1d5e1913cc9","bawag_edb_stats","Bawag EDB Stats","The apiBankEdbStatsBawag package calculates time-series variables based on EDB input that are used in the main scoring model.","acl","2019-09-06T10:39:25Z","2019-09-06T12:44:49Z","1222","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect-staging.spotcap.com/content/b120d06d-9d16-4e31-a88a-f1d5e1913cc9/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/b120d06d-9d16-4e31-a88a-f1d5e1913cc9","owner","220",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","apiBankEdbStatsBawag","2019.08.06","R 3.6.0; ; 2019-09-06 12:32:36 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate EDB variables from request 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* @param user_id A user_id to get the EDBs for 
+ #* @get /calculate_self 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Calculate CLA space 
+ #* @post /calculate_cl 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"15","1469b0e1-d309-435a-bfd8-ae326c1a3850","spotcap_approval_probability","Spotcap Approval Probability","Test API","acl","2019-05-22T12:32:03Z","2019-08-14T08:19:53Z","1215","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/1469b0e1-d309-435a-bfd8-ae326c1a3850/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/1469b0e1-d309-435a-bfd8-ae326c1a3850","owner","180",3600,3600,60,5,2,0,5,0.3,"3.6.8","staging","no package","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(req, res) { 
+ -- 
+ #* @get /predict 
+ #* @param user_id 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+     # Retrieving the prediction 
+     api_parsed_content <- tryCatch( 
+       content(api_response, encoding = ""UTF-8""), 
+       error = function(x) NA) 
+      
+     api_parsed_header <- tryCatch( 
+       headers(api_response), 
+       error = function(x) NA) 
+ -- 
+ #* @param user_id Select a user_id 
+ #* @get /predict_check 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) {"
+"16","1a0deeca-5efa-447e-84e5-8ea40ee42f76","spotcap_standard_performance_new","Spotcap Standard Performance","The apiStandardPerformance package predicts the likelihood of default for a Standard product application using a variety of different application level data.","acl","2019-07-25T08:53:47Z","2019-08-13T14:04:46Z","1214","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect-staging.spotcap.com/content/1a0deeca-5efa-447e-84e5-8ea40ee42f76/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/1a0deeca-5efa-447e-84e5-8ea40ee42f76","owner","210",3600,3600,60,5,2,1,5,0.3,NA,"staging","apiStandardPerformance","2018.12.18-2","R 3.6.0; ; 2019-08-13 14:02:07 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Make a prediction with application_id 
+ #* @post /predict_app 
+ #* @serializer unboxedJSON 
+ function(req, res, application_id) {"
+"17","56c729d7-23f6-4f72-9a59-8d2006d72a8f","spotcap_transactions_clustering","Spotcap Transactions Clustering","The apiBankTransactionsClustering package assigns clusters based on the HDBSCAN method using cosine string distance and calculates features on those clusters that are used in the main scoring model.","acl","2019-07-12T10:05:46Z","2019-08-12T12:43:25Z","1209","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect-staging.spotcap.com/content/56c729d7-23f6-4f72-9a59-8d2006d72a8f/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/56c729d7-23f6-4f72-9a59-8d2006d72a8f","owner","207",3600,3600,60,5,3,1,5,0.1,NA,"staging","apiBankTransactionsClustering","2019.07.11-1","R 3.6.0; ; 2019-08-12 12:41:08 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #' Assign clusters and return cluster summary features 
+ #' @post /cluster 
+ #' @param <calc_features> Should cluster features be also calculated 
+ function(req, res, calc_features = TRUE) {"
+"18","d4d49f56-ae2f-43fe-9824-f5dd5e64f53c","plumber_logging","Plumber Logging","Test API","acl","2019-08-01T13:24:38Z","2019-08-09T08:13:01Z","1201","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/d4d49f56-ae2f-43fe-9824-f5dd5e64f53c/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/d4d49f56-ae2f-43fe-9824-f5dd5e64f53c","owner","215",NA,NA,NA,NA,NA,NA,NA,NA,"3.6.8","staging","no package","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+    
+ } 
+  
+ getUserMetadata <- function(req) { 
+ -- 
+ } 
+  
+ #* @get /hello 
+ function(req, res){"
+"19","04fd59c9-a5e1-4328-9438-a8e53e9c9602","spotcap_transactions_categorization_redeployed","Spotcap Transactions Categorization","The apiBankTransactionsCategorization package categorizes bank account transactions using a NN model trained at Spotcap.","acl","2019-06-25T08:55:42Z","2019-08-08T10:43:36Z","1196","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/04fd59c9-a5e1-4328-9438-a8e53e9c9602/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/04fd59c9-a5e1-4328-9438-a8e53e9c9602","owner","193",3600,3600,60,5,3,1,5,0.1,"3.6.8","staging","apiBankTransactionsCategorization","2019.06.05","R 3.6.0; ; 2019-07-30 12:10:08 UTC; windows"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* @param exclude_intercompany Should intercompany transactions be excluded? 
+ #* @post /<country>/predict 
+ #* @serializer unboxedJSON 
+ function(req, res, country, exclude_intercompany = FALSE) {"
+"20","2b574c6f-68b3-46b6-a22e-842feab56283","spotcap_light_expert_scorecard_wrapper","Spotcap Light Expert Scorecard Wrapper","The apiLightExpertScorecardWrapper pacakge scores any Aurum 2.0 client using the old expert scorecard.","acl","2019-07-04T10:12:20Z","2019-08-05T16:11:06Z","1156","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/2b574c6f-68b3-46b6-a22e-842feab56283/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/2b574c6f-68b3-46b6-a22e-842feab56283","owner","199",3600,3600,60,5,2,0,5,0.3,"3.6.8","staging","apiLightExpertScorecardWrapper","2019.06.14-01","R 3.6.0; ; 2019-08-05 16:06:50 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /score 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"21","20aa3861-1832-4ec8-8969-c74ce39d7607","bawag_light_performance","Bawag Light Performance","The apiBawagLight package predicts the likelihood of default for a Bawag Light product application using a variety of different application level data.","acl","2019-07-17T13:12:03Z","2019-07-22T16:01:32Z","1085","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/20aa3861-1832-4ec8-8969-c74ce39d7607/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/20aa3861-1832-4ec8-8969-c74ce39d7607","owner","209",3600,3600,60,5,2,0,5,0.3,"3.6.8","staging","apiBawagLight","2019.07.17-01","R 3.6.0; ; 2019-07-22 15:57:35 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"22","38cf4dbf-64ae-452f-ad45-7e43c0ade166","06_categorizationstats","Spotcap Transactions Categorization Stats","The apiBankTransactionsCategorizationStats package calculates stas on categorized bank account transactions.","acl","2019-04-15T10:28:12Z","2019-07-18T12:58:58Z","1080","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect-staging.spotcap.com/content/38cf4dbf-64ae-452f-ad45-7e43c0ade166/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/38cf4dbf-64ae-452f-ad45-7e43c0ade166","owner","154",3600,3600,60,5,3,1,5,0.1,NA,"staging","apiBankTransactionsCategorizationStats","2019.07.02","R 3.6.0; ; 2019-07-11 10:04:33 UTC; windows"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Categorization stats 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+  function(req, res) {"
+"23","b6f2f5fe-5cc7-4146-b7d6-7060ab4130c1","spotcap_standard_performance","Spotcap Standard Performance (Old)","Test API","acl","2019-03-06T10:58:01Z","2019-06-24T11:27:25Z","915","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/b6f2f5fe-5cc7-4146-b7d6-7060ab4130c1/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/b6f2f5fe-5cc7-4146-b7d6-7060ab4130c1","owner","126",3600,3600,60,5,2,0,5,0.3,"3.6.8","staging","no package","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function() { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+     # Retrieving the prediction 
+     api_parsed_content <- tryCatch( 
+       content(api_response, encoding = ""UTF-8""), 
+       error = function(x) NA) 
+ -- 
+      
+     api_parsed_header <- tryCatch( 
+       headers(api_response), 
+       error = function(x) NA) 
+ -- 
+ #* Make a prediction with application_id 
+ #* @post /predict_app 
+ #* @serializer unboxedJSON 
+ function(req, res, application_id) { 
+ -- 
+     # # Retrieving the prediction 
+     api_parsed_content <- tryCatch( 
+       content(api_response, encoding = ""UTF-8""), 
+       error = function(x) NA) 
+ -- 
+     #  
+     # api_parsed_header <- tryCatch( 
+     #   headers(api_response), 
+     #   error = function(x) NA)"
+"24","52b85099-bcd6-45d5-a202-d73f800f874e","testpackage","TestPackage","Test API","acl","2019-05-20T14:38:48Z","2019-05-20T15:54:06Z","782","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect-staging.spotcap.com/content/52b85099-bcd6-45d5-a202-d73f800f874e/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/52b85099-bcd6-45d5-a202-d73f800f874e","owner","171",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","spotcapr, aider","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* @param weighted Should the average be weighted? 
+ #* @get /calculate 
+ #* @serializer unboxedJSON 
+ function(res, x, y, weighted = FALSE) {"
+"25","33045025-7d34-414e-97c7-9cfe5699a728","05_cors_testing","05 CORS_Testing","Test API","acl","2019-05-20T08:34:41Z","2019-05-20T13:19:31Z","775","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect-staging.spotcap.com/content/33045025-7d34-414e-97c7-9cfe5699a728/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/33045025-7d34-414e-97c7-9cfe5699a728","owner","169",NA,NA,NA,NA,NA,NA,NA,NA,NA,"staging","no package","No info","No info","# library(plumber) 
+  
+ # #* @filter cors 
+ # cors <- function(req, res) { 
+ -- 
+  
+  
+ #' @filter cors 
+ cors <- function(req, res) { 
+ -- 
+  
+  
+ # #* @filter cors 
+ # cors <- function(res) { 
+ -- 
+  
+ # #* Check API readiness 
+ # #* @options /healthcheck 
+ # function(res) { 
+ -- 
+  
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res, req) { 
+ -- 
+  
+ #' CORS testing 
+ #' @post /test 
+ function(req, res, in_str) {"
+"26","4805b924-080b-4739-b918-bdda46d96213","spotcap_inter_company_transaction","Spotcap Intercompany Transactions","Test API","acl","2019-04-03T14:35:39Z","2019-04-30T07:47:04Z","669","api","api",FALSE,"3.5.2",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect-staging.spotcap.com/content/4805b924-080b-4739-b918-bdda46d96213/","https://r-studio-connect-staging.spotcap.com/connect/#/apps/4805b924-080b-4739-b918-bdda46d96213","owner","147",NA,NA,NA,NA,NA,NA,NA,NA,"3.6.8","staging","no package","No info","No info","library(tidyverse) 
+ library(httr) 
+  
+ select_unique_pair <- function(df){ 
+ -- 
+  
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Identify intercompany transactions 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+       mutate( 
+         suspects = pmap( 
+           list(a = inflow, b = outflow),  
+           function(a, b) inner_join(a, b, ""transactionAmount"", suffix = c(""_i"", ""_o""))) 
+ -- 
+          
+         suspects = map( # calculating the stringdist between all pairs on a daily basis 
+           suspects,  
+           function(x) 
+ -- 
+          
+         convicts = pmap( # in case of duplication, selecting only the one with the lowest cosine result 
+           list(x = suspects, y = n_unique_i, z = n_unique_o),  
+           function(x, y, z) {"
+"27","3d304dae-05d1-44a0-af3d-4cfcc4119a6f","plot_bank_account_data","Plot Bank Account Data","The apiBaPlot package helps to draw plots in the API.","acl","2021-08-31T14:24:29Z","2021-08-31T14:45:59Z","951","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/3d304dae-05d1-44a0-af3d-4cfcc4119a6f/","https://r-studio-connect.spotcap.com/connect/#/apps/3d304dae-05d1-44a0-af3d-4cfcc4119a6f","owner","224",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBaPlot","2021.08.28-0.2","R 3.6.0; ; 2021-08-31 14:43:28 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Create plots 
+ #* @post /plot 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"28","863107fb-c559-4a8c-9037-b1365dc02baf","spotcap_bankaccount_performance_by_ilia","Spotcap Bankaccount Performance (by Ilia)","The apiBaStatsEdbPerformance package predicts the likelihood of default for an application based bank account data.","acl","2021-08-24T12:17:15Z","2021-08-25T14:26:56Z","947","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/863107fb-c559-4a8c-9037-b1365dc02baf/","https://r-studio-connect.spotcap.com/connect/#/apps/863107fb-c559-4a8c-9037-b1365dc02baf","owner","223",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBaStatsEdbPerformance","2019.11.01-33.17","R 3.6.0; ; 2021-08-25 14:24:21 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_ba_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create additional stats 
+ #* @post /ba_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create plots 
+ #* @post /plot 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate a loan table 
+ #* @post /loan_table 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"29","689efd0a-1c0d-4187-8eb5-3196837f3d2b","spotcap_cluster_description","Spotcap Cluster Description","The apiClusterDescription package extracts IBAN for every transaction
+    and than clusters it. If there is no IBAN in a ""transaction"" entry, then it 
+    takes transformed data from a ""Description"" field. And transforms these 
+    into clusters.","acl","2020-11-23T11:13:06Z","2021-08-25T11:43:11Z","942","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect.spotcap.com/content/689efd0a-1c0d-4187-8eb5-3196837f3d2b/","https://r-studio-connect.spotcap.com/connect/#/apps/689efd0a-1c0d-4187-8eb5-3196837f3d2b","owner","207",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiClusterDescription","2020.05.27-0.14","R 4.1.0; x86_64-pc-linux-gnu; 2021-08-25 11:42:40 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Cluster transactions based on Iban's or description field 
+ #* @post /cluster 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"30","d5d8274a-2c58-4653-a6b5-185c46ddcf34","spotcap-bankaccount-performance2","Spotcap Bankaccount Performance","The apiBaStatsEdbPerformance package predicts the likelihood of default for an application based bank account data.","acl","2019-12-16T09:14:01Z","2021-08-25T10:36:56Z","898","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect.spotcap.com/content/d5d8274a-2c58-4653-a6b5-185c46ddcf34/","https://r-studio-connect.spotcap.com/connect/#/apps/d5d8274a-2c58-4653-a6b5-185c46ddcf34","owner","196",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBaStatsEdbPerformance","2019.11.01-33.0","R 3.6.1; ; 2020-12-10 15:04:07 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_ba_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create additional stats 
+ #* @post /ba_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Create plots 
+ #* @post /plot 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate a loan table 
+ #* @post /loan_table 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"31","4dec6344-9b44-4f15-b628-cc7eec603e9e","spotcap_bank_account_transaction_performace","Spotcap Bank Account Transaction Performace","The apiTransactionModel package predicts the likelihood of default for an application based on any bank account data, but the minimum requirement is 90 days.","acl","2021-08-20T12:05:37Z","2021-08-20T12:05:41Z","924","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/4dec6344-9b44-4f15-b628-cc7eec603e9e/","https://r-studio-connect.spotcap.com/connect/#/apps/4dec6344-9b44-4f15-b628-cc7eec603e9e","owner","221",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiTransactionModel","2021.06.14-01.01","R 4.1.0; ; 2021-07-22 07:48:30 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_transaction_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"32","9c35136b-6ed8-45aa-8adb-b546dcaae0fd","covid_bank_account_stats_test","Covid Bank Account Stats (TEST)","Test API","acl","2021-08-20T09:25:13Z","2021-08-20T09:50:51Z","923","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/9c35136b-6ed8-45aa-8adb-b546dcaae0fd/","https://r-studio-connect.spotcap.com/connect/#/apps/9c35136b-6ed8-45aa-8adb-b546dcaae0fd","owner","220",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","covidBankAccountStats, bankAccountStats","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate COVID risk score 
+ #* @post /covid_risk_score 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   } 
+  
+   message("">>> Loading lockdown periods config... <<<"") 
+   # TODO: make it thru mutate inside of the function, the function should give 
+ -- 
+   client$periods <- load_lockdown_periods(client$periods) 
+  
+   message("">>> Loading weights config... <<<"") 
+   # TODO: make it thru mutate inside of the function, the function should give"
+"33","6efd7958-e2bb-4bfb-85c4-b9128d803eea","spotcap_standard_performance_test","Spotcap Standard Performance (TEST)","The apiStandardPerformanceWhiteLabel package predicts the likelihood of default for an application based on strandar account data.","acl","2021-08-11T11:18:49Z","2021-08-11T11:18:53Z","915","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/6efd7958-e2bb-4bfb-85c4-b9128d803eea/","https://r-studio-connect.spotcap.com/connect/#/apps/6efd7958-e2bb-4bfb-85c4-b9128d803eea","owner","218",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiStandardPerformanceWhiteLabel","2021.02.16-1","R 4.1.0; ; 2021-08-11 11:17:43 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_standard_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Convert industry to standard 
+ #* @post /convert_industry 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"34","4a3b12e3-a686-460d-a0d2-6036f19ff54d","spotcap_edb_stats_test","Spotcap EDB Stats (TEST)","The apiBankEdbStats package calculates time-series variables based on EDB input that are used in the main scoring model.","acl","2021-08-11T10:56:03Z","2021-08-11T10:56:07Z","914","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/4a3b12e3-a686-460d-a0d2-6036f19ff54d/","https://r-studio-connect.spotcap.com/connect/#/apps/4a3b12e3-a686-460d-a0d2-6036f19ff54d","owner","217",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBankEdbStats","2021.06.14-03","R 4.1.0; ; 2021-08-11 10:54:48 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate EDB variables from request 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* @param user_id A user_id to get the EDBs for 
+ #* @get /calculate_self 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Calculate CLA space 
+ #* @post /calculate_cl 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate EDB windowed variables from request 
+ #* @post /calculate_windowed 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate EDB windowed variables for one perido from request 
+ #* @post /calculate_windowed_period 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"35","a179b9e8-535e-4db9-b85f-d78d3badcffe","spotcap_light_performance_test","Spotcap Light Performance (TEST)","The apiLightPerformance package predicts the likelihood of default for a Light product application using a variety of different application level data. (OUTDATED)","acl","2021-08-11T10:26:21Z","2021-08-11T10:26:24Z","913","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/a179b9e8-535e-4db9-b85f-d78d3badcffe/","https://r-studio-connect.spotcap.com/connect/#/apps/a179b9e8-535e-4db9-b85f-d78d3badcffe","owner","216",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiLightPerformance","2021.06.15-4","R 4.1.0; ; 2021-08-11 10:24:23 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a bank account prediction (transaction model) 
+ #* @post /predict_transaction_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   # Retrieving the prediction 
+   api_parsed_content <- tryCatch( 
+     httr::content(api_response, encoding = ""UTF-8""), 
+     error = function(x) NA) 
+  
+   api_parsed_header <- tryCatch( 
+     httr::headers(api_response), 
+     error = function(x) NA) 
+ -- 
+ #* Make a bank account prediction 
+ #* @post /predict_ba 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   # Retrieving the prediction 
+   api_parsed_content <- tryCatch( 
+     httr::content(api_response, encoding = ""UTF-8""), 
+     error = function(x) NA) 
+  
+   api_parsed_header <- tryCatch( 
+     httr::headers(api_response), 
+     error = function(x) NA) 
+ -- 
+ #* Make a bank account prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"36","f99c29c8-000f-4683-a062-7df7bd26e96b","spotcap_bank_account_transaction_performace_test3","Spotcap Bank Account Transaction Performace (TEST)","The apiTransactionModel package predicts the likelihood of default for an application based on any bank account data, but the minimum requirement is 90 days.","acl","2021-08-10T13:56:57Z","2021-08-10T13:57:00Z","912","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/f99c29c8-000f-4683-a062-7df7bd26e96b/","https://r-studio-connect.spotcap.com/connect/#/apps/f99c29c8-000f-4683-a062-7df7bd26e96b","owner","214",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiTransactionModel","2021.06.14-01.01","R 4.1.0; ; 2021-07-22 07:48:30 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_transaction_performance 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"37","a98241ac-aa84-4abb-8a9d-8862bfdbd325","bank_account_stats2","Bank Account Stats","The API includes all Bank Account related functions.
+    Use four spaces when indenting paragraphs within the Description.","acl","2020-10-13T09:32:34Z","2020-12-10T16:48:30Z","899","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/a98241ac-aa84-4abb-8a9d-8862bfdbd325/","https://r-studio-connect.spotcap.com/connect/#/apps/a98241ac-aa84-4abb-8a9d-8862bfdbd325","owner","205",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","bankAccountStats","2020.10.05-1.6.3","R 4.0.2; ; 2020-12-10 16:16:25 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate COVID risk score 
+ #* @post /covid_risk_score 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+   } 
+  
+   message("">>> Loading lockdown periods config... <<<"") 
+   # TODO: make it thru mutate inside of the function, the function should give 
+ -- 
+   client$periods <- load_lockdown_periods(client$periods) 
+  
+   message("">>> Loading weights config... <<<"") 
+   # TODO: make it thru mutate inside of the function, the function should give"
+"38","de5441dc-c735-4271-ba13-123d14c6417d","spotcap_cluster_description_stats2","Spotcap Cluster Description Stats","The apiClusterDescriptionStats package calculates variables based on clusters.","acl","2020-10-26T10:24:39Z","2020-12-10T08:09:40Z","896","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect.spotcap.com/content/de5441dc-c735-4271-ba13-123d14c6417d/","https://r-studio-connect.spotcap.com/connect/#/apps/de5441dc-c735-4271-ba13-123d14c6417d","owner","206",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiClusterDescriptionStats","2020.06.10-10","R 3.6.1; ; 2020-12-09 07:53:40 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate cluster stat variables from request 
+ #* @post /calculate_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate top-10 cluster in/outflows from request 
+ #* @post /calculate_top_ten_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"39","02336370-ec97-405d-b1d5-708fca9b34f1","ba_covid_stats2","BA COVID stats","The apiBAcovid package calculates time-series variables for three separeted COVID-19 time periods (Jan-Feb, Mar-Apr and the last 60 days) based on EDB input that are used in the main scoring model.","acl","2020-07-01T13:41:17Z","2020-08-06T09:00:57Z","875","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/02336370-ec97-405d-b1d5-708fca9b34f1/","https://r-studio-connect.spotcap.com/connect/#/apps/02336370-ec97-405d-b1d5-708fca9b34f1","owner","204",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBAcovid","2020.06.25-0.6","R 4.0.2; ; 2020-08-06 08:57:25 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Slice the data into 3 different data frames and calculates stats 
+ #* @post /covid_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Evaluates seasonality and calculates corresponding stats 
+ #* @post /sesonality_stats 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"40","fc84eb9e-9b98-4eca-a575-e3c0988e25b0","spotcap_edb_stats2","Spotcap EDB Stats","The apiBankEdbStats package calculates time-series variables based on EDB input that are used in the main scoring model.","acl","2019-07-22T13:57:26Z","2020-06-24T10:20:30Z","867","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect.spotcap.com/content/fc84eb9e-9b98-4eca-a575-e3c0988e25b0/","https://r-studio-connect.spotcap.com/connect/#/apps/fc84eb9e-9b98-4eca-a575-e3c0988e25b0","owner","179",3600,3600,60,5,2,1,5,0.3,NA,"production","apiBankEdbStats","2019.06.04-05","R 4.0.0; ; 2020-06-24 09:49:37 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate EDB variables from request 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* @param user_id A user_id to get the EDBs for 
+ #* @get /calculate_self 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Calculate CLA space 
+ #* @post /calculate_cl 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* Calculate EDB windowed variables from request 
+ #* @post /calculate_windowed 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"41","126d45b5-5e26-481b-b768-46857458a440","bawag_light_performance_rsc2","Bawag Light Performance RSC","The apiBawagLightRsc package predicts the likelihood of default for a Bawag Light product application using a variety of different application level data.","acl","2020-05-19T09:25:13Z","2020-05-19T09:34:23Z","859","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect.spotcap.com/content/126d45b5-5e26-481b-b768-46857458a440/","https://r-studio-connect.spotcap.com/connect/#/apps/126d45b5-5e26-481b-b768-46857458a440","owner","198",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBawagLightRsc","2020.03.23-03","R 3.6.1; ; 2020-03-24 15:44:12 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"42","0f5726cc-d4a0-4178-af95-b31d02146f6f","test_api2","Test API","Test API","acl","2020-05-05T13:09:23Z","2020-05-05T13:09:28Z","858","api","api",FALSE,"3.6.0",FALSE,"5ec54260-5021-4df5-a60c-c33826b52c93","https://r-studio-connect.spotcap.com/content/0f5726cc-d4a0-4178-af95-b31d02146f6f/","https://r-studio-connect.spotcap.com/connect/#/apps/0f5726cc-d4a0-4178-af95-b31d02146f6f","owner","197",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","no package","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Create test 
+ #* @post /test 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"43","6e71524a-98f6-48d9-a8dd-3521caf7c6e6","spotcap_light_performance_redeployed_20190715","Spotcap Light Performance","The apiLightPerformance package predicts the likelihood of default for a Light product application using a variety of different application level data.","acl","2019-07-15T10:31:52Z","2020-02-03T14:19:34Z","855","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect.spotcap.com/content/6e71524a-98f6-48d9-a8dd-3521caf7c6e6/","https://r-studio-connect.spotcap.com/connect/#/apps/6e71524a-98f6-48d9-a8dd-3521caf7c6e6","owner","177",3600,3600,60,5,2,0,5,0.3,NA,"production","apiLightPerformance","2018.12.03-3","R 3.6.1; ; 2020-02-03 10:36:16 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"44","c0e6eefc-ac77-489b-8704-49be323db33e","cembra_zek_prediction2","CEMBRA ZEK Prediction","The apiCembraZEKPrediction package predicts the likelihood of default for an application based on data from ZEK and converts it to a score.","acl","2019-09-12T15:23:12Z","2019-11-25T13:14:58Z","851","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect.spotcap.com/content/c0e6eefc-ac77-489b-8704-49be323db33e/","https://r-studio-connect.spotcap.com/connect/#/apps/c0e6eefc-ac77-489b-8704-49be323db33e","owner","195",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiCembraZEKPrediction","2019.07.29-6","R 3.6.1; ; 2019-11-25 11:40:25 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict_zek 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"45","f28a8f00-0c95-4997-874e-26c294c6e330","bawag_edb_stats2","Bawag EDB Stats","The apiBankEdbStatsBawag package calculates time-series variables based on EDB input that are used in the main scoring model.","acl","2019-09-06T12:47:36Z","2019-09-06T12:47:50Z","848","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect.spotcap.com/content/f28a8f00-0c95-4997-874e-26c294c6e330/","https://r-studio-connect.spotcap.com/connect/#/apps/f28a8f00-0c95-4997-874e-26c294c6e330","owner","194",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBankEdbStatsBawag","2019.08.06","R 3.6.0; ; 2019-09-06 12:32:36 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Calculate EDB variables from request 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+ function(req, res) { 
+ -- 
+ #* @param user_id A user_id to get the EDBs for 
+ #* @get /calculate_self 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Calculate CLA space 
+ #* @post /calculate_cl 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"46","344a064e-61ed-4465-b205-e8487b0d5299","spotcap_standard_performance","Spotcap Standard Performance","The apiStandardPerformance package predicts the likelihood of default for a Standard product application using a variety of different application level data.","acl","2019-07-25T13:26:09Z","2019-08-13T14:05:20Z","841","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect.spotcap.com/content/344a064e-61ed-4465-b205-e8487b0d5299/","https://r-studio-connect.spotcap.com/connect/#/apps/344a064e-61ed-4465-b205-e8487b0d5299","owner","180",3600,3600,60,5,2,1,5,0.3,NA,"production","apiStandardPerformance","2018.12.18-2","R 3.6.0; ; 2019-08-13 14:02:07 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res, user_id) { 
+ -- 
+ #* Make a prediction with application_id 
+ #* @post /predict_app 
+ #* @serializer unboxedJSON 
+ function(req, res, application_id) {"
+"47","6e3107c2-079c-461d-b785-f1e22ff85732","spotcap_transactions_categorization2","Spotcap Transactions Categorization","The apiBankTransactionsCategorization package categorizes bank account transactions using a NN model trained at Spotcap.","acl","2019-08-09T15:04:54Z","2019-08-12T07:28:19Z","835","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect.spotcap.com/content/6e3107c2-079c-461d-b785-f1e22ff85732/","https://r-studio-connect.spotcap.com/connect/#/apps/6e3107c2-079c-461d-b785-f1e22ff85732","owner","193",NA,NA,NA,NA,NA,NA,NA,NA,"3.6.8","production","apiBankTransactionsCategorization","2019.06.05","R 3.6.0; ; 2019-07-30 12:10:08 UTC; windows"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* @param exclude_intercompany Should intercompany transactions be excluded? 
+ #* @post /<country>/predict 
+ #* @serializer unboxedJSON 
+ function(req, res, country, exclude_intercompany = FALSE) {"
+"48","f2c6511c-2200-4c74-abd7-7693f4ba21d0","spotcap_transactions_categorization_stats2","Spotcap Transactions Categorization Stats","The apiBankTransactionsCategorizationStats package calculates stas on categorized bank account transactions.","acl","2019-07-31T10:18:20Z","2019-07-31T10:18:27Z","813","api","api",FALSE,"3.6.0",FALSE,"71a7e27c-26f5-47ae-9483-3ee4bf57a299","https://r-studio-connect.spotcap.com/content/f2c6511c-2200-4c74-abd7-7693f4ba21d0/","https://r-studio-connect.spotcap.com/connect/#/apps/f2c6511c-2200-4c74-abd7-7693f4ba21d0","owner","190",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","apiBankTransactionsCategorizationStats","2019.07.02","R 3.6.0; ; 2019-07-11 10:04:33 UTC; windows"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Categorization stats 
+ #* @post /calculate 
+ #* @serializer unboxedJSON 
+  function(req, res) {"
+"49","613e6743-a5b3-484c-8ee3-e86a28628c25","spotcap_transactions_clustering2","Spotcap Transactions Clustering","The apiBankTransactionsClustering package assigns clusters based on the HDBSCAN method using cosine string distance and calculates features on those clusters that are used in the main scoring model.","acl","2019-07-29T09:14:59Z","2019-07-29T09:15:06Z","805","api","api",FALSE,"3.6.0",FALSE,"24c836d6-a199-4682-843b-bf70821528cb","https://r-studio-connect.spotcap.com/content/613e6743-a5b3-484c-8ee3-e86a28628c25/","https://r-studio-connect.spotcap.com/connect/#/apps/613e6743-a5b3-484c-8ee3-e86a28628c25","owner","182",3600,3600,60,5,3,1,5,0.3,NA,"production","apiBankTransactionsClustering","2019.07.11","R 3.6.0; ; 2019-07-12 09:58:31 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #' Assign clusters and return cluster summary features 
+ #' @post /cluster 
+ #' @param <calc_features> Should cluster features be also calculated 
+ function(req, res, calc_features = TRUE) {"
+"50","88335d06-7e89-4b8c-a1d6-69beb0d71539","bawag_light_performance2","Bawag Light Performance","The apiBawagLight package predicts the likelihood of default for a Bawag Light product application using a variety of different application level data.","acl","2019-07-17T13:25:55Z","2019-07-22T16:01:59Z","802","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect.spotcap.com/content/88335d06-7e89-4b8c-a1d6-69beb0d71539/","https://r-studio-connect.spotcap.com/connect/#/apps/88335d06-7e89-4b8c-a1d6-69beb0d71539","owner","178",3600,3600,60,5,2,0,5,0.3,"3.6.8","production","apiBawagLight","2019.07.17-01","R 3.6.0; ; 2019-07-22 15:57:35 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"51","976a0c57-84a5-4962-8f7c-f40958adc480","spotcap_light_expert_scorecard_wrapper_redeployed","Spotcap Light Expert Scorecard Wrapper","The apiLightExpertScorecardWrapper pacakge scores any Aurum 2.0 client using the old expert scorecard.","acl","2019-07-04T10:27:15Z","2019-07-22T13:29:25Z","799","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect.spotcap.com/content/976a0c57-84a5-4962-8f7c-f40958adc480/","https://r-studio-connect.spotcap.com/connect/#/apps/976a0c57-84a5-4962-8f7c-f40958adc480","owner","176",3600,3600,60,5,2,0,5,0.3,"3.6.8","production","apiLightExpertScorecardWrapper","2019.06.14","R 3.6.0; ; 2019-07-22 12:57:37 UTC; unix"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* Make a prediction 
+ #* @post /score 
+ #* @serializer unboxedJSON 
+ function(req, res) {"
+"52","c4792c9f-e864-4774-9ed8-55674f501d06","spotcap_transactions_categorization","Spotcap Transactions Categorization","Test API","acl","2019-05-06T12:58:27Z","2019-05-10T09:49:58Z","693","api","api",FALSE,"3.6.0",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect.spotcap.com/content/c4792c9f-e864-4774-9ed8-55674f501d06/","https://r-studio-connect.spotcap.com/connect/#/apps/c4792c9f-e864-4774-9ed8-55674f501d06","owner","164",3600,3600,60,5,3,1,5,0.3,"3.6.8","production","no package","No info","No info"," 
+ #* Check API readiness 
+ #* @get /healthcheck 
+ function(res) { 
+ -- 
+ #* @param exclude_intercompany Should intercompany transactions be excluded? 
+ #* @post /<country>/predict 
+ #* @serializer unboxedJSON 
+ function(req, res, country, exclude_intercompany = FALSE) { 
+ -- 
+     payload_seq <- keras::texts_to_sequences(tokenizer, payload_description$text) %>%  
+       keras::pad_sequences(10) 
+      
+     payload_seq <- lapply(1:nrow(payload_seq), function(i) {list(payload_seq[i, ])}) 
+ -- 
+     # Retrieving the prediction 
+     api_parsed_content <- tryCatch( 
+       content(api_response, encoding = ""UTF-8""), 
+       error = function(x) NA)"
+"53","120830ee-255d-4706-a56a-65268816358e","spotcap_intercompany_transactions","Spotcap Intercompany Transactions","Test API","acl","2019-04-15T07:52:02Z","2019-05-03T08:13:31Z","675","api","api",FALSE,"3.5.2",FALSE,"4e5f75c7-8ca5-485e-9c59-1047d1d3dee4","https://r-studio-connect.spotcap.com/content/120830ee-255d-4706-a56a-65268816358e/","https://r-studio-connect.spotcap.com/connect/#/apps/120830ee-255d-4706-a56a-65268816358e","owner","156",NA,NA,NA,NA,NA,NA,NA,NA,NA,"production","no package","No info","No info"," 
+ # Function ---------------------------------------------------------------- 
+  
+ select_unique_pair <- function(df){ 
+ -- 
+ #* Check API readiness 
+ #* @get /healthcheck 
+  
+ function(res) { 
+ -- 
+ #* @post /predict 
+ #* @serializer unboxedJSON 
+  
+ function(req, res) { 
+ -- 
+       mutate( 
+         suspects = pmap( 
+           list(a = inflow, b = outflow),  
+           function(a, b) inner_join(a, b, ""transactionAmount"", suffix = c(""_i"", ""_o""))) 
+ -- 
+          
+         suspects = map( # calculating the stringdist between all pairs on a daily basis 
+           suspects,  
+           function(x) 
+ -- 
+          
+         convicts = pmap( # in case of duplication, selecting only the one with the lowest cosine result 
+           list(x = suspects, y = n_unique_i, z = n_unique_o),  
+           function(x, y, z) {"

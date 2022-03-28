@@ -1,0 +1,18 @@
+Package: spotcapr
+Title: Extract data from Spotcap APIs
+Version: 0.0.2.3
+Authors@R: person("Konrad", "Semsch", email = "konrad.semsch@spotcap.com", role = c("aut", "cre"))
+Description: The spotcapr package enables analysts and data scientists to extract data and variables from various Spotcap APIs.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 3.6), dplyr (>= 0.8.1)
+Imports: config (>= 0.3), DBI (>= 1.0.0), glue (>= 1.3.1), httr (>=
+        1.4.0), jsonlite (>= 1.6), magrittr (>= 1.5), purrr (>= 0.3.2),
+        stringr (>= 1.4.0), uuid (>= 0.1.2), lubridate (>= 1.7.4),
+        RMariaDB (>= 1.0.6)
+License: MIT + file LICENSE
+Suggests: testthat, tidyverse
+Author: Konrad Semsch [aut, cre]
+Maintainer: Konrad Semsch <konrad.semsch@spotcap.com>
+Built: R 4.0.2; ; 2020-07-30 12:08:32 UTC; unix
